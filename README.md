@@ -47,3 +47,5 @@ After the creating the jenkins server with terraform, the resulting page at the 
 
 Setting the credentials:
 ![account-credentials-setting](./images/setting-credentials.png "account-credentials-setting")
+
+Create a new pipeline on jenkins by clicking on `New Item` insert the source code management script credentials to create a pipeline on github. 
