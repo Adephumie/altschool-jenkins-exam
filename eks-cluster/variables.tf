@@ -1,0 +1,9 @@
+variable "region" {}
+variable "vpc_cidr_block" {}
+variable "private-subnet-1a-cidr" {}
+variable "private-subnet-1b-cidr" {}
+variable "public-subnet-1a-cidr" {}
+variable "public-subnet-1b-cidr" {}
+variable "avail_zone_A" {}
+variable "avail_zone_B" {}
+variable "instance_type" {}
