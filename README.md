@@ -46,6 +46,47 @@ After the creating the jenkins server with terraform, the resulting page at the 
 4. Click on the `Manage Jenkins` tab on the left pane to add github credentials.
 
 Setting the credentials:
+
 ![account-credentials-setting](./images/setting-credentials.png "account-credentials-setting")
 
-Create a new pipeline on jenkins by clicking on `New Item` insert the source code management script credentials to create a pipeline on github. 
+Create a new pipeline on jenkins by clicking on `New Item` insert the source code management script credentials to create a pipeline on github.
+
+Two pipelines were created:
+The `create-cluster` and the `deployment-pipeline` pipelines.
+
+![pipelines-created](images/pipelines-created.png "image of pipelines created")
+
+## <b>Images of the resources created on AWS:</b>
+
+![cluster](images/cluster.png "aws-cluster")
+
+![instances](images/instances.png "aws-instances")
+
+![load-balancer](images/load-balancer.png "aws-loadbalancer")
+
+
+## <b>Output showing kubectl commands:</b>
+
+![kubectl-namespaces](images/kubectl-namespaces.png "kubectl-namespaces")
+
+![kubectl-nodes](images/kubectl-nodes.png "kubectl-nodes")
+
+![kubectl-pods](images/kubectl-pods.png "kubectl-pods")
+
+![service-nginx-ingress](images/service-nginx-ingress.png "service-nginx-ingress")
+
+![service-prometheus](images/service-prometheus.png "service-prometheus")
+
+## <b>Images of the pipeline builds:</b>
+
+![jenkins-eks-pipeline-build](images/jenkins-eks-pipeline-build.png "jenkins-eks-pipeline-build")
+
+
+## <b>Images of app front-end:</b> 
+
+![voting-app](images/voting-app.png "voting-app-frontend")
+
+![the-sock-shop-app](images/sock-shop.png "the-sock-shop-app")
+
+
+
