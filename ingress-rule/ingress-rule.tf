@@ -28,36 +28,36 @@ resource "kubernetes_ingress_v1" "voting-ingress" {
   }
 }
 
-resource "kubernetes_ingress_v1" "result-ingress" {
-  metadata {
-    name      = "result-app"
-    namespace = "voting-app"
-    labels = {
-      name = "voting-service"
-    }
-    annotations = {
-      "kubernetes.io/ingress.class" : "nginx"
-    }
-  }
+# resource "kubernetes_ingress_v1" "result-ingress" {
+#   metadata {
+#     name      = "result-app"
+#     namespace = "voting-app"
+#     labels = {
+#       name = "voting-service"
+#     }
+#     annotations = {
+#       "kubernetes.io/ingress.class" : "nginx"
+#     }
+#   }
 
-  spec {
-    rule {
-      host = "voting-result.funmilayofagoyinbo.com"
-      http {
-        path {
-          backend {
-            service{
-            name = "result-service"
-            port {
-              number = 80
-            }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+#   spec {
+#     rule {
+#       host = "voting-result.funmilayofagoyinbo.com"
+#       http {
+#         path {
+#           backend {
+#             service{
+#             name = "result-service"
+#             port {
+#               number = 80
+#             }
+#             }
+#           }
+#         }
+#       }
+#     }
+#   }
+# }
 
 resource "kubernetes_ingress_v1" "micro-ingress" {
   metadata {
