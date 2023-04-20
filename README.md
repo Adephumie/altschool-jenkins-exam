@@ -81,6 +81,7 @@ The `create-cluster` and the `deployment-pipeline` pipelines.
 
 ![jenkins-eks-pipeline-build](images/jenkins-eks-pipeline-build.png "jenkins-eks-pipeline-build")
 
+![jenkins-deployment-build](images/jenkins-deployment-build.png "jenkins-deployment-build")
 
 ## <b>Images of app front-end:</b> 
 
