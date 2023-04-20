@@ -89,5 +89,8 @@ The `create-cluster` and the `deployment-pipeline` pipelines.
 
 ![the-sock-shop-app](images/sock-shop.png "the-sock-shop-app")
 
+## <b>jenkin-destroy-pipelines: </b>
 
+![jenkins-deployment-destroy](images/jenkins-deployment-destroy.png "jenkins-deployment-destroy")
 
+![jenkins-eks-destroy](images/jenkins-eks-destroy.png "jenkins-eks-destroy")
